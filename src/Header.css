@@ -1,0 +1,59 @@
+header {
+    background-color:rgba(0, 173, 111, 0.5);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+  
+  header h3{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  #Title{
+    grid-column: 3 / span 5;
+    grid-row: 1 / span 1;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    grid-column: 3 / span 5;
+    grid-row: 2 / span 1;
+  }
+  #logo{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+  .navbar .icon {
+    display: none;
+  }
+  @media screen and (max-width: 900px) { 
+    #Title{
+      grid-row: 3 / span 1;
+    }
+    nav {
+      grid-row: 4 / span 1;
+    }
+    #logo{
+      grid-column: 4 / span 2;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  

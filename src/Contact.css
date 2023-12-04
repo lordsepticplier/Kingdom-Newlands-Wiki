@@ -1,0 +1,18 @@
+#ContactLayout {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+#TheForm{
+    color:#ffffff;
+    background-color:rgba(0, 173, 111, 0.15);
+    background: rgba(0, 173, 111, 0.5);
+    grid-column: 2 / span 4;
+    grid-row: 2 / span 2;
+    margin: 50px;
+}
+@media screen and (max-width: 900px) { 
+    #TheForm{
+        grid-column: 1 / span 6;
+        grid-row: 2 / span 2;
+    }
+}

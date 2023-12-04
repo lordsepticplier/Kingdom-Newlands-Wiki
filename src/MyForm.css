@@ -1,0 +1,9 @@
+.card-body {
+    background: rgba(0, 173, 111, 0.15);
+}
+.card{
+    background-color:rgba(0, 173, 111, 0.15);
+}
+label{
+    font-size: 30px;
+}
